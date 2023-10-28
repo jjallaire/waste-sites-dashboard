@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-99.9.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Philipp Ottolinger">
+
+<title>Waste Lands - America’s forgotten nuclear legacy</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="dashboard_files/libs/clipboard/clipboard.min.js"></script>
+<script src="dashboard_files/libs/quarto-html/quarto.js"></script>
+<script src="dashboard_files/libs/quarto-html/popper.min.js"></script>
+<script src="dashboard_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="dashboard_files/libs/quarto-html/anchor.min.js"></script>
+<link href="dashboard_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="dashboard_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="dashboard_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="dashboard_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="dashboard_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="dashboard_files/libs/quarto-dashboard/quarto-dashboard.js"></script>
+<script src="dashboard_files/libs/quarto-dashboard/web-components.js" type="module"></script>
+<script src="dashboard_files/libs/quarto-dashboard/components.js"></script>
+<script src="dashboard_files/libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="dashboard_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="dashboard_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="dashboard_files/libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="dashboard_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="dashboard_files/libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="dashboard_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="dashboard_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="dashboard_files/libs/leaflet-binding-2.2.0/leaflet.js"></script>
+<script src="dashboard_files/libs/plotly-binding-4.10.3/plotly.js"></script>
+<script src="dashboard_files/libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="dashboard_files/libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="dashboard_files/libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="dashboard_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="dashboard_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+</head>
+
+<body class="quarto-dashboard dashboard-fill fullcontent">
+
+<header>
+<nav class="navbar navbar-expand-md slim" data-bs-theme="dark">
+  <div class="navbar-container container-fluid">
+    <button class="navbar-toggler hidden" type="button" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-controls="dashboard-collapse" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>    
+    <div class="navbar-brand-container">       
+
+      <div class="navbar-title">
+        <div class="navbar-title-text"><a href="#">Waste Lands - America’s forgotten nuclear legacy</a></div>
+        <div class="navbar-author">Philipp Ottolinger</div>
+      </div>
+    </div>
+</div>
+
+
+</nav>
+</header>
+
+<div class="page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill">  
+
+<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 65fr) minmax(3em, 35fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-title="All sites and their current status" data-force-header="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header">
+All sites and their current status
+</div>
+<div class="card-body html-fill-item html-fill-container" style="padding: 0;">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div id="htmlwidget-dbd21be70255c002167e" style="width:100%;height:406px;" class="leaflet html-widget html-fill-item html-fill-container"></div>
+<script type="application/json" data-for="htmlwidget-dbd21be70255c002167e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addCircleMarkers","args":[[43.02938,35.8888273,39.952953,40.705709,39.2351293,41.060828,39.5034873,44.6208218,40.641371,42.714363,37.171525,39.8085862,40.571816,40.565614,35.4091162,35.4089763,51.4365605,51.4169399,51.4704969,39.760683,41.555428,41.043905,40.646602,38.8160893,40.75693,32.8017,39.0549587,39.1696997,42.041269,41.929321,39.30542,27.903278,41.831004,37.794389,39.361063,39.9573541,37.4139066,40.780607,41.672189,43.4002812,40.720791,40.746102,39.907325,39.99065,39.9675,35.8997249,46.881553,40.683798,40.669735,40.8612399,40.8566491,40.8576899,39.38292,38.956038,40.406217,42.783496,40.356069,41.788382,42.841147,41.489517,35.2581156,35.2699242,46.21589,40.971676,41.8881016,41.183961,41.826713,41.5047369,41.4897019,41.4698381,42.9164729,36.4502996,41.7675431,40.5376109,42.449703,43.0813183,40.7316423,40.3610921,38.6342338,39.9252507,42.1542011,34.214928,39.1593563,41.542425,39.0552253,42.689809,39.7527034,40.8100815,41.8868794,41.5591179,39.7607989,41.2738975,41.221563,40.6307648,39.757058,39.724917,39.7612457,39.7523413,41.0449468,37.9313277,38.6870307,39.691073,41.480316,39.099555,37.2660265,41.9459395,43.1984719,43.2986943,43.2727646,42.1049067,43.0864402,45.2967784,42.0156716,41.6849472,28.9053926,41.7060473,40.70566,40.04,40.0092836,41.823893,27.8634503,32.893882,37.3028407,37.6088463,43.0037571,38.6926197,37.872571,38.978245,38.5317649,43.1589601,40.5582755,39.3822485,46.6687584,41.448863,42.3798583,40.4758364,43.0807723,41.4796408,33.985769,39.1647525,27.864734,27.896259,39.966135,41.2115478,41.8832032,40.8135254,42.0295142,42.0272445,42.0279936,42.4520808,40.702254,40.7087363,40.177675,39.328553,41.071312,41.638554,35.879062,42.8242699,35.979165,40.512939,42.210278,42.28583,38.7677773,37.428818,42.9430356,42.9762656,41.87233,41.8928591,41.8508997,41.8645921,43.083934,44.08416,41.45807,39.1094089,39.1028691,40.6042435,40.7336957,42.3608693,41.9166725,39.343598,40.5437349,40.898229,41.5523287,38.5888364,40.844248,41.9486497,37.132137,37.133745,43.4110428,40.577768,40.9369123,42.9474827,40.0212536,37.5248689,39.7611284,37.8633656,37.8509775,36.9312033,39.6302849,41.7913146,41.5524213,38.943169,41.7986843,38.2406071,38.8740489,35.6572976,38.8224921,42.8383787,36.2521866,36.2529134,40.4702797,42.0264698,39.9054678,40.8578769,43.2133292,43.2209056,33.924434,42.305633,40.5861828,42.4416607,42.3608074,36.0427296,39.1556331,41.3248238,42.3144468,41.522297,37.1084912,40.8114122,41.7022002,29.7397937,40.4328709,38.6081798,42.9452171,27.8738345,40.131862,40.6945861,41.537733,40.3468259,36.6783276,32.2629996,39.793,39.4053387,41.9880177,39.1064276,41.916384,40.760499,40.4961287,41.8905174,38.4158297,43.0838391,42.3020689,37.5251071,39.5293905,39.5261114,42.9968662,39.7329931,40.003852,40.7022351,34.2314053,33.0982208,41.770515,42.9967609,41.4007898,40.6223867,34.09072,39.683046,40.6210885,36.7723247,36.769437,42.3316608,42.3347381,39.2000419,41.9434597,38.0465876,38.0430474,37.1190486,41.3899099,38.7595313,38.7602299,38.6620508,40.6460743,42.4708215,40.6401147,37.9127051,40.3969089,32.7834274,40.7681382,40.78762,35.8792165,31.1423176,34.7694616,29.3643071,39.2501344,43.1290712,42.9994176,42.9918367,43.000288,41.810856,40.7243254,33.6772895,40.4359138,36.1454355,36.1454355,38.5226829,39.5441912,37.7262432,40.7816443,40.3345902,41.7567251,40.5691639,38.209609,32.2325947,32.2429879,37.8766607,38.5190333,41.7924797,39.1331577,39.5394578,38.046807,47.6527974,38.3605514,42.9110679,40.3673938,42.5404703,27.8806606,40.8170144,35.0862606,40.2561733,41.5255587,27.9032564,36.130506,39.2144284,44.6618081,39.7859562,38.6499295,42.3609987,42.3611662,42.3628627,40.9696277,41.5541542,38.7701858,42.449137,41.5036366,40.3977933,40.7817085,40.5495298,42.4709049,40.6924016,42.306989,39.7787869,41.8347722,41.3190546],[-83.65525,-106.3050223,-75.59275,-74.011084,-84.4461909,-80.63726699999999,-84.7438586,-123.1209165,-80.242936,-73.718858,-88.754983,-75.43474620000001,-79.755539,-79.77024,-107.7930393,-107.8001418,179.1800738,179.1854275,179.1050363,-86.187273,-73.046494,-73.527292,-74.020402,-77.04096250000001,-73.99023099999999,-97.30844999999999,-108.5491612,-84.4791985,-93.66361999999999,-85.014988,-76.56543000000001,-81.88079399999999,-87.626853,-122.400205,-84.54075,-83.0114552,-79.06254730000001,-80.32613600000001,-83.568625,-83.952724,-74.17936,-74.0066415,-75.353926,-83.01999000000001,-83.25,-106.2901271,-103.182017,-74.402263,-73.897766,-74.0626986,-74.0679585,-74.066148,-76.56855,-94.57263,-75.93251600000001,-78.85166599999999,-79.899872,-87.602525,-78.83405999999999,-88.11790499999999,-107.9512247,-107.9472765,-103.5429165,-73.882735,-84.01647920000001,-73.18287669999999,-71.40083,-81.66088739999999,-83.2164884,-82.18298609999999,-78.83755240000001,-119.5753557,-71.42869810000001,-79.7820937,-83.013991,-79.0363576,-79.8183193,-75.93696610000001,-116.2161811,-77.662378,-72.4997776,-105.8793205,-84.4280187,-81.616423,-108.5512211,-73.803073,-105.2291912,-73.9614625,-72.71723969999999,-81.588515,-105.2235364,-80.8506014,-78.23569999999999,-83.09024890000001,-84.22171400000001,-84.1798,-84.18298,-104.9969841,-73.53289770000001,-122.0214129,-90.16736160000001,-75.50152300000001,-81.669839,-84.53688099999999,-107.8851023,-87.7418225,-77.6287624,-103.8136527,-103.7936436,-88.03230499999999,-79.0092178,-93.5577892,-71.3068792,-83.5595378,-98.13194110000001,-72.7468525,-74.01176,-75.58526999999999,-75.0621711,-87.66862399999999,-82.3933571,-117.236318,-121.8656185,-121.8435298,-87.97386659999999,-90.16229,-122.256179,-110.1375529,-106.9424463,-78.71104889999999,-96.78475280000001,-84.5471105,-119.5113211,-81.68552200000001,-71.1145502,-79.9612978,-79.0045696,-81.6322802,-117.357148,-86.52506649999999,-81.93186799999999,-81.99217400000001,-74.975123,-73.72776639999999,-87.69198230000001,-91.22477170000001,-93.64868989999999,-93.6418863,-93.6405773,-76.49284539999999,-75.197627,-74.1012813,-80.268683,-76.619784,-85.170232,-87.59587500000001,-97.584751,-73.8683168,-83.956013,-79.83285100000001,-120.37,-120.4325,-90.34965010000001,-122.174053,-78.8854747,-78.891836,-88.2082202,-88.2085683,-88.20006619999999,-88.1925024,-78.95093,-115.6075,-83.490196,-84.50502,-84.5340411,-83.047929,-74.00102560000001,-71.0954564,-87.65437780000001,-76.68632789999999,-107.9935576,-74.071579,-81.5618759,-90.21572,-74.2362643,-71.2689381,-109.882797,-109.8742568,-84.61731899999999,-74.4965644,-90.3994701,-87.89487320000001,-75.1597426,-77.44363370000001,-84.1829456,-109.3329082,-109.3295715,-109.8667241,-84.2871458,-87.58135660000001,-81.5937689,-77.06430949999999,-87.60693689999999,-108.6116682,-76.9945318,-117.5570236,-77.0175356,-73.9866842,-114.969227,-114.9681434,-74.47625410000001,-73.3217357,-75.1227445,-73.91384720000001,-78.9828825,-78.9737308,-118.1317669,-71.80377609999999,-79.5674775,-71.4212605,-71.09550489999999,-84.2066525,-84.4101247,-72.93320679999999,-85.1664088,-81.65487589999999,-88.80926789999999,-75.5815451,-87.9121608,-95.19362460000001,-79.24251390000001,-90.3427623,-78.7034835,-82.7483592,-84.2347657,-73.9845534,-72.56135860000001,-74.6548367,-107.2086776,-103.8668115,-108.368,-107.9484304,-87.6742575,-84.5502309,-87.690219,-73.9020074,-74.35271710000001,-80.77640599999999,-82.3777384,-89.37066729999999,-83.0931338,-77.4438724,-107.7715604,-107.8131722,-108.4105759,-105.014971,-75.06401200000001,-111.9101796,-118.697166,-81.6115152,-87.74500949999999,-78.9206748,-73.072232,-79.5819245,-118.3507917,-104.990634,-80.43527570000001,-108.6888224,-108.6856037,-106.1915057,-106.1990588,-118.3814623,-71.2346016,-108.9097968,-108.8942508,-94.6751185,-73.4285778,-90.3569054,-90.35225440000001,-90.18986270000001,-74.23239820000001,-83.388032,-74.1421898,-122.3316372,-80.0988423,-96.76163630000001,-73.54962860000001,-73.78628519999999,-106.304559,-89.5700794,-87.645753,-94.9377118,-81.6856784,-79.03882780000001,-78.8885101,-78.9201008,-78.9173649,-73.1243111,-74.0016224,-106.4753659,-79.99583010000001,-111.1344732,-111.1344732,-90.557169,-119.814758,-122.3731743,-74.2281181,-79.8521416,-81.23746,-74.4920041,-90.4746336,-110.9533996,-110.9494645,-122.2475358,-121.7557669,-87.6010361,-84.51755679999999,-119.8145261,-78.491821,-122.3044561,-108.7545421,-78.8755628,-80.0981068,-70.8888085,-82.0309858,-74.2524718,-85.2475572,-80.1993619,-88.0637756,-81.9171065,-82.43250860000001,-76.57153529999999,-123.0653442,-86.1411562,-90.3070305,-71.1592361,-71.1556882,-71.15957210000001,-74.2707793,-72.6560205,-90.4424678,-78.6545864,-81.60776079999999,-79.8358403,-74.1950188,-79.8122561,-71.1324006,-73.9024976,-83.12065440000001,-84.0879779,-87.70577710000001,-72.9213895],6,null,null,{"interactive":true,"className":"","stroke":true,"color":["black","green","black","black","red","red","green","green","green","black","red","black","black","black","red","red","red","red","red","red","black","black","black","red","black","black","red","black","red","black","black","red","red","black","green","green","red","black","green","black","black","green","black","red","red","green","red","red","black","red","red","red","black","red","black","black","red","black","green","red","red","red","red","black","green","black","black","black","black","black","black","black","black","green","red","red","black","black","red","red","green","green","black","red","red","orange","red","black","orange","red","red","black","red","black","black","black","black","red","red","black","green","orange","black","black","red","black","black","red","red","black","red","black","red","black","red","black","black","black","red","black","red","red","red","red","red","green","green","red","red","orange","black","green","red","orange","black","black","black","red","red","black","red","red","black","red","black","orange","red","red","red","black","red","green","black","black","orange","black","red","red","red","red","red","red","orange","red","black","orange","red","red","red","red","black","red","orange","red","red","red","black","black","black","black","red","orange","black","black","black","red","red","red","red","green","black","black","black","black","black","red","red","red","red","black","black","black","green","red","red","black","red","red","red","red","green","black","black","black","orange","green","black","black","red","red","red","green","red","red","red","black","red","black","red","red","red","black","red","red","red","black","red","black","red","red","black","black","black","black","black","red","red","red","black","black","black","black","red","red","red","black","black","red","black","red","black","orange","green","orange","red","red","red","red","red","red","red","black","orange","red","red","red","black","orange","orange","orange","black","black","red","black","orange","black","orange","black","black","red","black","red","red","black","orange","green","green","black","red","red","black","red","red","red","black","red","red","black","orange","orange","red","black","black","red","red","green","black","black","black","black","red","black","red","green","red","black","red","red","black","red","red","orange","red","black","black","red","red","red","green","black","red","red","black","black","black","black","black","red","black","red","black","black"],"weight":5,"opacity":0.6,"fill":true,"fillColor":["black","green","black","black","red","red","green","green","green","black","red","black","black","black","red","red","red","red","red","red","black","black","black","red","black","black","red","black","red","black","black","red","red","black","green","green","red","black","green","black","black","green","black","red","red","green","red","red","black","red","red","red","black","red","black","black","red","black","green","red","red","red","red","black","green","black","black","black","black","black","black","black","black","green","red","red","black","black","red","red","green","green","black","red","red","orange","red","black","orange","red","red","black","red","black","black","black","black","red","red","black","green","orange","black","black","red","black","black","red","red","black","red","black","red","black","red","black","black","black","red","black","red","red","red","red","red","green","green","red","red","orange","black","green","red","orange","black","black","black","red","red","black","red","red","black","red","black","orange","red","red","red","black","red","green","black","black","orange","black","red","red","red","red","red","red","orange","red","black","orange","red","red","red","red","black","red","orange","red","red","red","black","black","black","black","red","orange","black","black","black","red","red","red","red","green","black","black","black","black","black","red","red","red","red","black","black","black","green","red","red","black","red","red","red","red","green","black","black","black","orange","green","black","black","red","red","red","green","red","red","red","black","red","black","red","red","red","black","red","red","red","black","red","black","red","red","black","black","black","black","black","red","red","red","black","black","black","black","red","red","red","black","black","red","black","red","black","orange","green","orange","red","red","red","red","red","red","red","black","orange","red","red","red","black","orange","orange","orange","black","black","red","black","orange","black","orange","black","black","red","black","red","red","black","orange","green","green","black","red","red","black","red","red","red","black","red","red","black","orange","orange","red","black","black","red","red","green","black","black","black","black","red","black","red","green","red","black","red","red","black","red","red","orange","red","black","black","red","red","red","green","black","red","red","black","black","black","black","black","red","black","red","black","black"],"fillOpacity":0.2},null,null,["FlintAC Spark Plug, Dort Highway Plant","Los AlamosAcid/Pueblo Canyon","West ChesterAeroprojects, Inc.","New YorkAfrican Metals","Evendale/LocklandAir Force Plant No. 36","YoungstownAjax Magnethermic Corp.","OxfordAlba Craft Shop","AlbanyAlbany, Oregon, FUSRAP Site","AliquippaAliquippa Forge","Watervliet Allegheny-Ludlum Steel","MetropolisAllied Chemical Corp. Plant","North ClaymontAllied Chemical and Dye Corp.","New KensingtonAluminum Co. of America (ALCOA)","New KensingtonAluminum Co. of America (ALCOA)","McKinley CountyAmbrosia Lake Mill Site","McKinley CountyAmbrosia Lake Mill Site","Amchika IslandAmchitka Island Test Center","Amchika IslandAmchitka Island Test Center","Amchika IslandAmchitka Island Test Center","IndianapolisAmerican Bearing Corp.","WaterburyAmerican Brass Co.","StamfordAmerican Cyanamid Co","BrooklynAmerican Machine & Foundry Co.","AlexandriaAmerican Machine and Foundry Co.","New YorkAmerican Machine and Foundry Co., Bus Terminal Office","Fort WorthAmerican Manufacturing Co. of Texas","Grand JunctionAmerican Smelting and Refining Co.","CincinnatiAmerican Steel Foundries, Elmes-King Division","AmesAmes Laboratory Research Reactor Facility","ColdwaterAmex Specialty Metal Corp.","BaltimoreArmco-Rustless Iron and Steel","BartowArmour Fertilizer Works","ChicagoArmour Research Foundation","San FranciscoArthur D. Little Co.","FairfieldAssociated Aircraft Tool and Manufacturing Co.","ColumbusB & T Metals","LynchburgBWX Technologies","Beaver FallsBabcock and Wilcox Co","ToledoBaker Brothers","SaginawBaker Perkins Co.","NewarkBaker and Company","New YorkBaker and Williams Warehouses","SwarthmoreBartol Research Foundation","ColumbusBattelle Laboratories-King Avenue","West JeffersonBattelle Laboratories-West Jefferson Plutonium Facilities","Los AlamosBayo Canyon, New Mexico, FUSRAP Site","BelfieldBelfield Mill Site","Murray HillBell Telephone Laboratories","BrooklynBelmont Smelting and Refining Works, Inc.","TeterboroBendix Aviation Corp., Eclipse-Pioneer Division","TeterboroBendix Aviation Corp., Eclipse-Pioneer Division","TeterboroBendix Aviation Corp., Eclipse-Pioneer Division","BaltimoreBendix Aviation Corporation, Frieze Division","Kansas CityBendix Aviation Corporation, Kansas City Plant","ReadingBeryllium Corporation","LackawannaBethlehem Steel Corporation, Lackawanna Plant","West MifflinBettis Atomic Power Laboratories","ChicagoBillings Hospital","BuffaloBliss and Laughlin Steel","JolietBlockson Chemical Co.","Cibola CountyBluewater AEC Ore Buying Station","Cibola CountyBluewater AEC Ore Buying Station","BowmanBowman Mill Site","YonkersBoyce Thompson Institute for Plant Research","AdrianBridgeport Brass Co.","BridgeportBridgeport Brass Co., Havens Laboratory","ProvidenceBrown University, Metcalf Research Lab","ClevelandBrush Beryllium Co.","ElmoreBrush Beryllium Co.","LorainBrush Beryllium Co.","BuffaloBuflovak Co.","KingsburgBurris Park Field Station","CranstonC. I. Hayes, Inc.","SpringdaleC.H. Schnorr","Warren/DetroitCarboloy Co.","Niagara FallsCarborundum Company, Buffalo Ave. Plant","SaxonburgCarnegie Institute of Technology, Nuclear Research Center","ReadingCarpenter Steel Co.","Hot Creek ValleyCentral Nevada Test Site","ChambersburgChambersburg Engineering Co.","Indian OrchardChapman Valve","Socorro CountyChupadera Mesa, New Mexico, FUSRAP Site","CincinnatiCincinnati Milling Machine Co.","ClevelandClevite Corp.","Grand JunctionClimax Uranium Co. (Grand Junction Mill)","Colonie (Albany)Colonie Site (National Lead)","GoldenColorado School of Mines","New YorkColumbia University","WindsorCombustion Engineering","ClevelandCooper Metallurgical Associates, Inc.","GoldenCoors Porcelain","WarrenCopperweld Steel","Karthaus, Clearfield CountyCurtiss-Wright Corp.","MarionDayton Project Unit 6","DaytonDayton Project Units 3 and 4","DaytonDayton Project Units 3 and 4","DaytonDayton Project Units 3 and 4","DenverDenver Equipment Co.","StamfordDorr Corp.","Walnut CreekDow Chemical Co.","MadisonDow Chemical Co., Madison Site","DeepwaterDuPont Deepwater Works","ClevelandDuPont-Grasselli Research Laboratory","CincinnatiDubois Chemical Co.","DurangoDurango Mill Site","ChicagoERA Tool and Engineering Co.","RochesterEastman Kodak Laboratory","EdgemontEdgemont Mill Site","EdgemontEdgemont Mill Site","PalatineEimco Corp.","Niagara FallsElectromet Corporation","Elk RiverElk River Reactor","PlainvilleEngelhard Industries","ToledoEtna Machine Co.","Falls CityFalls City Mill Site","New Britain/Newington  & HartfordFenn Machinery Co.","New YorkFerro Metal and Chemical Co.","Exton / Frazer / East Whiteland TownshipFoote Mineral Co.","PhiladelphiaFrankford Arsenal","ChicagoGSA 39th Street Warehouse","RiverviewGardinier, Inc.","La JollaGeneral Atomics","San JoseGeneral Electric Co.","Pleasanton/SunolGeneral Electric Vallecitos","MilwaukeeGeneral Electric X-Ray Division Pilot Plant","Granite CityGeneral Steel Industries","BerkeleyGilman Hall, University of California at Berkeley","Green RiverGreen River Mill Site","GunnisonGunnison Mill Site","LockportGuterl Specialty Steel","HallamHallam Nuclear Power Facility","HamiltonHamilton OH Site","RichlandHanford Engineer Works","ClevelandHarshaw Chemical Co.","CambridgeHarvard University Electron Accelerator","PittsburghHeppenstall Co.","Niagara FallsHooker Chemical Co.","ClevelandHorizons, Inc.","RiversideHunter Douglas Aluminum Corp.","BloomingtonIndiana University","BartowInternational Minerals and Chemical Corp., Bonnie Mill Plant","MulberryInternational Minerals and Chemical Corp., Pilot Plant","MoorestownInternational Pulverizing Co.","Mount KiscoInternational Rare Metals Refinery, Inc.","ChicagoInternational Register","MiddletownIowa Army Ammunition Plant","AmesIowa State University Ames Laboratory","AmesIowa State University Ames Laboratory","AmesIowa State University Ames Laboratory","IthacaIthaca Gun Company","PhillipsburgJ.T. Baker Chemical Co.","Jersey CityJersey City FUSRAP Site","WashingtonJessop Steel Co.","BaltimoreJohns Hopkins University","Fort WayneJoslyn Manufacturing Supply Co.","DoltonKaiser Aluminum Corp","Guthrie (Crescent)Kerr-McGee","NiskayunaKnolls Atomic Power Laboratory","KnoxvilleKnoxville Iron Co.","VeronaKoppers Co., Inc.","LakeviewLakeview Mill","LakeviewLakeview Mill","HazelwoodLatty Avenue Properties","StanfordLeland Stanford University","BuffaloLinde Air Products","TonawandaLinde Air Products, Ceramics Plant","West ChicagoLindsay Light and Chemical Co.","West ChicagoLindsay Light and Chemical Co.","West ChicagoLindsay Light and Chemical Co.","West ChicagoLindsay Light and Chemical Co.","Niagara FallsLove Canal","LowmanLowman Mill Site","LuckeyLuckey, Ohio, FUSRAP Site","CincinnatiMagnus Brass Co.","CincinnatiMagnus Brass Co.","MarionMarion Engineer Depot","New YorkMarkite Co.","CambridgeMassachusetts Institute of Technology, Hood Building","ChicagoMax Zuckerman and Sons","BaltimoreMax Zuckerman and Sons","MaybellMaybell Mill Site","MaywoodMaywood Site","ClevelandMcKinney Tool and Manufacturing Co.","St. LouisMedart Co.","VeronaMetals Disintegrating Co., Inc.","AttleboroMetals and Controls Corp.","Mexican HatMexican Hat Mill Site","Mexican HatMexican Hat Mill Site","St. LouisMichigan (Velsicol) Chemical Corp.","MiddlesexMiddlesex North Site","GalesburgMidwest Manufacturing Co.","MilwaukeeMilwaukee Airport","PhiladelphiaMinneapolis-Honeywell Regulator Co.","RichmondMobil Oil Corp.","DaytonMonsanto Chemical Co.","MonticelloMonticello Mill Site","MonticelloMonticello Mill Site","Monument ValleyMonument Valley Mill Site","MiamisburgMound Laboratory","ChicagoMuseum of Science and Industry","ClevelandNational Acme Machine Co.","WashingtonNational Bureau of Standards","ChicagoNational Guard Armory","NaturitaNaturita Mill Site","WashingtonNaval Gun Factory and Bureau of Ordnance","InyokernNaval Ordnance Test Station","WashingtonNaval Research Laboratory","ScotiaNaval Supply Depot, AEC Warehouse","Las VegasNellis Air Force Base","Las VegasNellis Air Force Base"," New BrunswickNew Brunswick, NJ, FUSRAP Site","CanaanNew England Lime Co.","CamdenNew York Shipbuilding Corp","New YorkNew York University","LewistonNiagara Falls Storage Site","LewistonNiagara Falls Vicinity Properties","DowneyNorth American Aviation, Inc.","WorcesterNorton Co.","ApolloNuclear Materials and Equipment Corp. (NUMEC), Apollo Nuclear Fabrication Facility","Cambridge (until 1958); West Concord (1958 and after)Nuclear Metals, Inc.","Cambridge (until 1958); West Concord (1958 and after)Nuclear Metals, Inc.","Oak RidgeOak Ridge, TN, Warehouse Site","CincinnatiOhmart Corp.","New HavenOlin Mathieson","Battle CreekOliver Corp.","ClevelandOsborn Manufacturing Co.","PaducahPaducah Gaseous Diffusion Plant","PalmertonPalmerton Ore Buying Site","Cook CountyPalos Park Forest Preserve Site (A/Plot M)","PasadenaPasadena Chemical Corp. Pilot Plant","BlairsvillePenn Central Transportation Co.","Webster GrovesPetrolite Corp.","CheektowagaPfohl Brothers Landfill","LargoPinellas Plant General Electric Co","PiquaPiqua Nuclear Power Facility","New YorkPolytechnic Institute of Brooklyn","MiddletownPratt and Whitney Corp., CANEL Facility","PrincetonPrinceton University","Rio Arriba CountyProject Gas Buggy Site","Eddy CountyProject Gnome Site","Rio Blanco CountyProject Rio Blanco","Garfield CountyProject Rulison","ChicagoQuality Hardware and Machine Co.","CincinnatiQueen City Barrel Co.","ChicagoR. Krasburg and Sons Manufacturing Co.","New YorkRadium Chemical Company, Inc","MetuchenRaritan Arsenal","AshtabulaReactive Metals, Inc."," HuntingtonReduction Pilot Plant (International Nickel Company)"," MadisonResearch Products Corp.","DetroitRevere Copper and Brass","RichmondReynolds Metals Co.","RifleRifle Mill Site","RifleRifle Mill Site","Fremont CountyRiverton Mill Site","DenverRocky Mountain Research Laboratories","PhiladelphiaRohm and Haas Co","Salt Lake CitySalt Lake City Vitro Chemical","Chatsworth (Los Angeles)Santa Susana Field Laboratory","Savannah RiverSavannah River Swamp","ChicagoSciaky Brothers, Inc.","TonawandaSeaway Industrial Park","SeymourSeymour Specialty Wire","Parks TownshipShallow Land Disposal Area","Los AngelesShannon Luminous Metals Co.","DenverShattuck Chemical","ShippingportShippingport Atomic Power Plant","ShiprockShiprock Mill Site","ShiprockShiprock Mill Site","Shirley BasinShirley Basin AEC Ore Buying Station","Shirley BasinShirley Basin AEC Ore Buying Station","Churchill CountyShoal Test Site","NortonShpack Landfill","San Miguel CountySlick Rock Mill Site","San Miguel CountySlick Rock Mill Site","GalenaSpencer Chemical Co.","DanburySperry Products, Inc.","RobertsonSt. Louis Airport","HazelwoodSt. Louis Airport Site Vicinity Properties","St. LouisSt. Louis Downtown Site","LindenStandard Oil Development Co. of NJ","Farmington HillsStar Cutter Corp.","Port RichmondStaten Island Warehouse","RichmondStauffer Metals, Inc.","CarnegieSuperior Steel Co.","DallasSutton, Steele and Steele Co.","HicksvilleSylvania Corning Nuclear Corp. – Hicksville Plant","BaysideSylvania Corning Nuclear Corp.-Bayside Laboratories","Los AlamosTA-1 Manhattan Laboratory","Lamar CountyTatum Salt Dome Test Site","Muscle ShoalsTennessee Valley Authority","Texas CityTexas City Chemicals, Inc.","Wood CountyThe Carborundum Co., Inc.","Niagara FallsTitanium Alloys Manufacturing Co.","TonawandaTonawanda Landfill and Mudflats Area","TonawandaTonawanda North FUSRAP Site","TonawandaTonawanda North FUSRAP Site","TorringtonTorrington Co.","New YorkTranscontinental Machine and Tool Co.","Socorro CountyTrinity Test Site","PittsburghTry Street Terminal","Tuba CityTuba City AEC Ore Buying Station","Tuba CityTuba City Mill Site","St LouisTyson Valley Powder Farm","RenoU.S. Bureau of Mines, Reno Station","San FranciscoU.S. Naval Radiological Defense Laboratory","OrangeU.S. Radium Corp.","McKeesportU.S. Steel Co., National Tube Division, Christy Park Works","PainesvilleUniroyal Chemical Co.","MiddlesexUnited Lead Co., Middlesex Sampling Plant","Hematite/FestusUnited Nuclear Corp.","TucsonUniversity of Arizona Southwest Experiment Station Buildings","TucsonUniversity of Arizona Southwest Experiment Station Buildings","BerkeleyUniversity of California Chemistry Building and Radiation Lab","DavisUniversity of California, Davis","ChicagoUniversity of Chicago Metallurgical Laboratory","CincinnatiUniversity of Cincinnati","RenoUniversity of Nevada","CharlottesvilleUniversity of Virginia Physics Department","SeattleUniversity of Washington","Montrose CountyUravan Mill Site","BuffaloUtica Street Warehouse","BridgevilleVanadium Corp. of America","BeverlyVentron Corporation","NicholsVirginia-Carolina Chemical Corp.","West OrangeVitro Corp. of America","ChattanoogaVitro Corp. of America","CanonsburgVitro Manufacturing (Canonsburg)","JolietW.E. Pratt Manufacturing Co.","RidgewoodW.R. Grace Co., Agricultural Chemicals Division","ErwinW.R. Grace and Company","BaltimoreW.R. Grace and Company","AlbanyWah Chang"," IndianapolisWash-Rite Co.","St. LouisWashington University","WatertownWatertown Arsenal","WatertownWatertown Arsenal","WatertownWatertown Arsenal","WayneWayne FUSRAP Site","MiddletownWesleyan University","BridgetonWest Lake Landfill","West ValleyWest Valley Demonstration Project","ClevelandWestern Reserve University","East PittsburghWestinghouse Atomic Power Div.","BloomfieldWestinghouse Electric Corp. (New Jersey)","CheswickWestinghouse Nuclear Fuels Division","WinchesterWinchester Engineering and Analytical Center","QueensWolff-Alport and Co.","DetroitWolverine Tube Division","Greene County/Montgomery CountyWright Air Development Center","ChicagoWyckoff Drawn Steel Co.","New HavenYale Heavy Ion Linear Accelerator"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLegend","args":[{"colors":["orange","green","red","black"],"labels":["Cleanup in progress.","Cleanup complete.","Status unclear.","No potential for radioactive contamination."],"na_color":null,"na_label":"NA","opacity":0.8,"position":"bottomleft","type":"unknown","title":null,"extra":null,"layerId":null,"className":"info legend","group":null}]}],"fitBounds":[24.05,-127.44,50.35,-65.3,[]],"limits":{"lat":[27.8634503,51.4704969],"lng":[-123.1209165,179.1854275]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div><div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-force-header="false" data-title="Number of sites" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header">
+Number of sites
+</div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div id="htmlwidget-dba78c8397aca74b89c6" style="width:100%;height:406px;" class="plotly html-widget html-fill-item html-fill-container"></div>
+<script type="application/json" data-for="htmlwidget-dba78c8397aca74b89c6">{"x":{"visdat":{"6ea16691b5a8":["function () ","plotlyVisDat"]},"cur_data":"6ea16691b5a8","attrs":{"6ea16691b5a8":{"x":{},"y":{},"text":["141<br />Remote or no potential for radioactive contamination.","157<br />No authority to clean up or status unclear.","30<br />Cleanup declared complete.","24<br />Cleanup in progress."],"hoverinfo":"text","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"showlegend":false,"xaxis":{"domain":[0,1],"automargin":true,"showline":false,"showticklabels":false,"fixedrange":true,"title":"","type":"category","categoryorder":"array","categoryarray":["Remote or no potential for radioactive contamination.","No authority to clean up or status unclear.","Cleanup declared complete.","Cleanup in progress."]},"yaxis":{"domain":[0,1],"automargin":true,"fixedrange":true,"title":""},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["Remote or no potential for radioactive contamination."],"y":[141],"text":"141<br />Remote or no potential for radioactive contamination.","hoverinfo":"text","type":"bar","name":"Remote or no potential for radioactive contamination.","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["No authority to clean up or status unclear."],"y":[157],"text":"157<br />No authority to clean up or status unclear.","hoverinfo":"text","type":"bar","name":"No authority to clean up or status unclear.","marker":{"color":"rgba(252,141,98,1)","line":{"color":"rgba(252,141,98,1)"}},"textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Cleanup declared complete."],"y":[30],"text":"30<br />Cleanup declared complete.","hoverinfo":"text","type":"bar","name":"Cleanup declared complete.","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Cleanup in progress."],"y":[24],"text":"24<br />Cleanup in progress.","hoverinfo":"text","type":"bar","name":"Cleanup in progress.","marker":{"color":"rgba(231,138,195,1)","line":{"color":"rgba(231,138,195,1)"}},"textfont":{"color":"rgba(231,138,195,1)"},"error_y":{"color":"rgba(231,138,195,1)"},"error_x":{"color":"rgba(231,138,195,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="card cell bslib-card html-fill-container" data-title="Sites on campus" data-force-header="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header">
+Sites on campus
+</div>
+<div class="card-body html-fill-item html-fill-container" style="padding: 0;">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div id="htmlwidget-36b96b8f0f22546dab24" style="width:100%;height:406px;" class="leaflet html-widget html-fill-item html-fill-container"></div>
+<script type="application/json" data-for="htmlwidget-36b96b8f0f22546dab24">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addCircleMarkers","args":[[42.041269,41.826713,40.8100815,37.872571,42.3798583,39.1647525,42.0295142,42.0272445,42.0279936,39.328553,37.428818,40.8578769,40.3468259,32.2325947,32.2429879,37.8766607,38.5190333,41.7924797,39.1331577,39.5394578,38.046807,47.6527974,38.6499295,41.5541542,41.5036366,41.3190546],[-93.66361999999999,-71.40083,-73.9614625,-122.256179,-71.1145502,-86.52506649999999,-93.64868989999999,-93.6418863,-93.6405773,-76.619784,-122.174053,-73.91384720000001,-74.6548367,-110.9533996,-110.9494645,-122.2475358,-121.7557669,-87.6010361,-84.51755679999999,-119.8145261,-78.491821,-122.3044561,-90.3070305,-72.6560205,-81.60776079999999,-72.9213895],6,null,null,{"interactive":true,"className":"","stroke":true,"color":["red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red"],"weight":5,"opacity":0.6,"fill":true,"fillColor":["red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red"],"fillOpacity":0.2},null,null,["AmesAmes Laboratory Research Reactor Facility","ProvidenceBrown University, Metcalf Research Lab","New YorkColumbia University","BerkeleyGilman Hall, University of California at Berkeley","CambridgeHarvard University Electron Accelerator","BloomingtonIndiana University","AmesIowa State University Ames Laboratory","AmesIowa State University Ames Laboratory","AmesIowa State University Ames Laboratory","BaltimoreJohns Hopkins University","StanfordLeland Stanford University","New YorkNew York University","PrincetonPrinceton University","TucsonUniversity of Arizona Southwest Experiment Station Buildings","TucsonUniversity of Arizona Southwest Experiment Station Buildings","BerkeleyUniversity of California Chemistry Building and Radiation Lab","DavisUniversity of California, Davis","ChicagoUniversity of Chicago Metallurgical Laboratory","CincinnatiUniversity of Cincinnati","RenoUniversity of Nevada","CharlottesvilleUniversity of Virginia Physics Department","SeattleUniversity of Washington","St. LouisWashington University","MiddletownWesleyan University","ClevelandWestern Reserve University","New HavenYale Heavy Ion Linear Accelerator"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"fitBounds":[24.05,-127.44,50.35,-65.3,[]],"limits":{"lat":[32.2325947,47.6527974],"lng":[-122.3044561,-71.1145502]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        typesetMath(container);
+        return container.innerHTML
+      } else {
+        typesetMath(note);
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      typesetMath(note);
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /container fluid -->
+
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (_event) {
+  if (window.bslib.Card) {
+    window.bslib.Card.initializeAllCards();
+  }
+}); 
+</script>
+  
+
+
+
+</body></html>
